@@ -1,0 +1,132 @@
+{
+    "lessons" : {
+        "WSK" : {
+            "name" : "Wirtschaft und Sozialkunde",
+            "short" : "WSK",
+            "teacher" : "Raab",
+            "color" : "rgb(255, 87, 34)"
+        },
+        "TIN" : {
+            "name" : "Technische Informatik",
+            "short" : "TIN",
+            "teacher" : "Raab",
+            "color" : "rgb(76, 175, 80)"
+        },
+        "MA1" : {
+            "name" : "Mathematik 1",
+            "short" : "MA1",
+            "teacher" : "Jasper-Loreck",
+            "color" : "rgb(3, 169, 244)"
+        },
+        "KNT" : {
+            "name" : "Netzwerktechnik",
+            "short" : "KNT",
+            "teacher" : "Köhler",
+            "color" : "rgb(63, 81, 181)"
+        },
+        "PRG" : {
+            "name" : "Programmierung",
+            "short" : "PRG",
+            "teacher" : "Raab",
+            "color" : "rgb(156, 39, 176)"
+        },
+        "INT" : {
+            "name" : "Internettechnologien",
+            "short" : "INT",
+            "teacher" : "Fitz-Gerald",
+            "color" : "rgb(255, 152, 0)"
+        },
+        "DBK" : {
+            "name" : "Datenbanken",
+            "short" : "DBK",
+            "teacher" : "Jasper-Loreck",
+            "color" : "rgb(139, 195, 74)"
+        },
+        "BSA" : {
+            "name" : "Betriebssysteme",
+            "short" : "BSA",
+            "teacher" : "Rettelbach",
+            "color" : "rgb(103, 58, 183)"
+        },
+        "DEU" : {
+            "name" : "Deutsch",
+            "short" : "DEU",
+            "teacher" : "Beskow",
+            "color" : "rgb(244, 67, 54)"
+        },
+        "ENG" : {
+            "name" : "Englisch",
+            "short" : "ENG",
+            "teacher" : "Gilbert",
+            "color" : "rgb(0, 150, 136)"
+        }
+    },
+    "scheduling" : [
+        {
+            "short" : "APR",
+            "name" : "April",
+            "exams" : [
+                {
+                    "day" : "11",
+                    "subject" : "INT",
+                    "room" : "Aula",
+                    "subjects" : ["PHP", "HTML", "CSS"]
+                }
+            ]
+        },
+        {
+            "short" : "MAI",
+            "name" : "Mai",
+            "exams" : [
+                {
+                    "day" : "09",
+                    "subject" : "PRG",
+                    "room" : "Aula"
+                },
+                {
+                    "day" : "16",
+                    "subject" : "KNT",
+                    "room" : "Aula"
+                }
+            ]
+        },
+        {
+            "short" : "JUN",
+            "name" : "Juni",
+            "exams" : [
+                {
+                    "day" : "04",
+                    "subject" : "MA1",
+                    "room" : "Aula"
+                },
+                {
+                    "day" : "29",
+                    "subject" : "BSA",
+                    "room" : "Aula"
+                }
+            ]
+        },
+        {
+            "short" : "JUL",
+            "name" : "Juli",
+            "exams" : [
+                {
+                    "day" : "02",
+                    "subject" : "TIN",
+                    "room" : "Aula",
+                    "subjects" : ["AND", "OR", "NOT", "NAND", "NOR", "XOR"]
+                },
+                {
+                    "day" : "06",
+                    "subject" : "DEU",
+                    "room" : "Aula"
+                },
+                {
+                    "day" : "09",
+                    "subject" : "WSK",
+                    "room" : "Aula"
+                }
+            ]
+        }
+    ]
+}

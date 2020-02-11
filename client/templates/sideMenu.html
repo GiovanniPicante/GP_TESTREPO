@@ -1,0 +1,32 @@
+<div id="sideMenu" ng-controller="sideMenuCtrl" ng-class="{ 'menuOpen' : menuOpen }">
+    <ul class="menuList">
+        <li class="menuItem">
+            <a class="menuLink" ng-click="openMenu()" ng-if="!menuOpen">
+                <span class="menuItemIcon mdi mdi-menu"></span>
+            </a>
+            <a class="menuLink" ng-click="closeMenu()" ng-if="menuOpen">
+                <span class="menuItemIcon mdi mdi-close"></span>
+            </a>
+        </li>
+        <li class="menuItem">
+            <a class="menuLink" href="{{ '#/examDates' }}">
+                <span class="menuItemIcon mdi mdi-clipboard-text-outline"></span>
+                <span ng-if="menuOpen" class="menuItemTitel">SCHULAUFGABEN</span>
+            </a>
+        </li>
+        <li class="menuItem menuCategoryHead">
+            <a class="menuLink" href="{{ '#/timeTable/DI' }}">
+                <span class="menuItemIcon mdi mdi-calendar-outline"></span>
+                <span ng-if="menuOpen" class="menuItemTitel">STUNDENPLAN</span>
+            </a>
+            <ul class="menuList menuCategory">
+                <li class="menuItem" ng-repeat="day in availableDays">
+                    <a class="menuLink" href="{{ '#/timeTable/' + day }}">
+                        <span class="menuItemIcon">{{ day }}</span>
+                        <span ng-if="menuOpen" class="menuItemTitel">{{ texts[day] | uppercase }}</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>

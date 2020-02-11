@@ -1,0 +1,24 @@
+<div id="timetableContainer" ng-controller="timeTableCtrl">
+    <h3>
+        {{ texts[selectedDay] }}
+    </h3>
+    <div class="entryContainer" ng-repeat="lesson in timeTable">
+        <h5 class="entryContainerHeading">
+            {{ lesson.time }}
+        </h5>
+        <div class="containerInfo" ng-repeat="lessonInfo in lesson.lessonInfo" ng-style="{ 'background-color' : lessonInfo.color }">
+            <span class="containerIcon">{{ lessonInfo.short }}</span>
+            <span class="containerName">{{ lessonInfo.name }}</span>
+            <div class="containerFooter">
+                <div class="containerMeta">
+                    <span class="lessonMetaLabel">Raum: </span>
+                    <span class="lessonMetaInfo">{{ lessonInfo.room }}</span>
+                </div>
+                <div class="containerMeta">
+                    <span class="lessonMetaLabel">Lehrer: </span>
+                    <span class="lessonMetaInfo">{{ lessonInfo.teacher }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

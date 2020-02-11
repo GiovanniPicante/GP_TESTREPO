@@ -1,0 +1,122 @@
+{
+    "lessons" : {
+        "WSK" : {
+            "name" : "Wirtschaft und Sozialkunde",
+            "short" : "WSK",
+            "room" : "03",
+            "teacher" : "Raab",
+            "color" : "rgb(255, 87, 34)"
+        },
+        "TIN" : {
+            "name" : "Technische Informatik",
+            "short" : "TIN",
+            "room" : "03",
+            "teacher" : "Raab",
+            "color" : "rgb(76, 175, 80)"
+        },
+        "MA1" : {
+            "name" : "Mathematik 1",
+            "short" : "MA1",
+            "room" : "03",
+            "teacher" : "Jasper-Loreck",
+            "color" : "rgb(3, 169, 244)"
+        },
+        "KNT" : {
+            "name" : "Netzwerktechnik",
+            "short" : "KNT",
+            "room" : "03",
+            "teacher" : "Köhler",
+            "color" : "rgb(63, 81, 181)"
+        },
+        "PRG" : {
+            "name" : "Programmierung",
+            "short" : "PRG",
+            "room" : "03",
+            "teacher" : "Raab",
+            "color" : "rgb(156, 39, 176)"
+        },
+        "INT" : {
+            "name" : "Internettechnologien",
+            "short" : "INT",
+            "room" : "03",
+            "teacher" : "Fitz-Gerald",
+            "color" : "rgb(255, 152, 0)"
+        },
+        "DBK" : {
+            "name" : "Datenbanken",
+            "short" : "DBK",
+            "room" : "03",
+            "teacher" : "Jasper-Loreck",
+            "color" : "rgb(139, 195, 74)"
+        },
+        "BSA" : {
+            "name" : "Betriebssysteme",
+            "short" : "BSA",
+            "room" : "03",
+            "teacher" : "Rettelbach",
+            "color" : "rgb(103, 58, 183)"
+        },
+        "DEU" : {
+            "name" : "Deutsch",
+            "short" : "DEU",
+            "room" : "03",
+            "teacher" : "Beskow",
+            "color" : "rgb(244, 67, 54)"
+        },
+        "ENG" : {
+            "name" : "Englisch",
+            "short" : "ENG",
+            "room" : "03",
+            "teacher" : "Gilbert",
+            "color" : "rgb(0, 150, 136)"
+        }
+    },
+    "scheduling" : {
+        "DI" : [
+            {
+                "time" : "16:00 - 17:30",
+                "lessons" : ["WSK", "TIN"]
+            },
+            {
+                "time" : "17:45 - 19:15",
+                "lessons" : ["TIN", "MA1"]
+            },
+            {
+                "time" : "19:30 - 21:00",
+                "lessons" : ["MA1", "MA1"]
+            }
+        ],
+        "DO" : [
+            {
+                "time" : "16:00 - 17:30",
+                "lessons" : ["KNT", "KNT"]
+            },
+            {
+                "time" : "17:45 - 19:15",
+                "lessons" : ["PRG", "PRG"]
+            },
+            {
+                "time" : "19:30 - 21:00",
+                "lessons" : ["INT", "INT"]
+            }
+        ],
+        "SA" : [
+            {
+                "time" : "07:10 - 8:40",
+                "lessons" : ["DBK", "DBK"]
+            },
+            {
+                "time" : "09:00 - 10:30",
+                "lessons" : ["BSA", "BSA"]
+            },
+            {
+                "time" : "10:45 - 12:15",
+                "lessons" : ["KNT", "ENG"]
+            },
+            {
+                "time" : "12:30 - 13:15",
+                "lessons" : ["DEU"]
+            }
+        ]
+    }
+}

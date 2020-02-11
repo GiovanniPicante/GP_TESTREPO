@@ -1,0 +1,29 @@
+<div id="examDatesContainer" ng-controller="examDatesCtrl">
+    <h3>
+        Schulaufgabentermine
+    </h3>
+    <div class="entryContainer" ng-repeat="month in examDates">
+        <h5 class="entryContainerHeading">
+            {{ month.name }}
+        </h5>
+        <div class="containerInfo" ng-style="{ 'background-color' :  exam.subjectInfo.color }" ng-repeat="exam in month.exams">
+            <span class="containerIcon">{{ exam.day }}</span>
+            <span class="containerName">{{ exam.subjectInfo.name }}</span>
+            <details>
+                <summary>Termindetails</summary>
+                <dl class="dateDetailsList">
+                    <dt class="dateDetailName">Lehrer:</dt>
+                    <dd class="dateDetailContent">{{ exam.subjectInfo.teacher }}</dd>
+                    <dt class="dateDetailName">Raum: </dt>
+                    <dd class="dateDetailContent">{{ exam.room }}</dd>
+                    <dt class="dateDetailName" ng-if="exam.subjects !== undefined">Stoffsammlung:</dt>
+                    <dd class="dateDetailContent" ng-if="exam.subjects !== undefined">
+                        <ul class="subjectListing">
+                            <li ng-repeat="subject in exam.subjects">{{ subject }}</li>
+                        </ul>
+                    </dd>
+                </dl>
+            </details>
+        </div>
+    </div>
+</div>

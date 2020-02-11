@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Stundenplan</title>
+
+        <link rel="stylesheet/less" href="/src/styles/main.less">
+        <link rel="stylesheet/less" href="/src/styles/menu.less">
+        <link rel="stylesheet/less" href="/src/styles/listStyling.less">
+
+        <link rel="stylesheet" href="/src/fonts/materialdesignicons.min.css">
+
+        <!-- JavaScript Dependencies -->
+        <script src="/dep/less/dist/less.min.js" ></script>
+        <script src="/dep/jquery/dist/jquery.min.js" ></script>
+        <script src="/dep/angular/angular.min.js" ></script>
+        <script src="/dep/angular-route/angular-route.min.js" ></script>
+
+        <!-- AnuglarJS APP -->
+        <script src="/src/javascript/app.js"></script>
+
+        <script src="/src/javascript/controller/mainCtrl.js"></script>
+        <script src="/src/javascript/controller/sideMenuCtrl.js"></script>
+        <script src="/src/javascript/controller/timeTableCtrl.js"></script>
+        <script src="/src/javascript/controller/examDatesCtrl.js"></script>
+    </head>
+    <body ng-controller="mainCtrl">
+        <ng-include src="'/src/templates/sideMenu.html'"></ng-include>
+
+        <div id="mainContentWrapper">
+            <ng-view></ng-view>        
+        </div>
+    </body>
+</html>
